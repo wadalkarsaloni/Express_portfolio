@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black !important;
+    color: white !important;
+    font-family: 'Poppins', sans-serif;
+}
+
+.fsec {
+    display: flex;
+    justify-content: space-around;
+    color: white !important;
+    margin: 23px 0;
+    align-items: center;
+}
+
+.fsec>div {
+    width: 40%;
+}
+
+.lsec {
+    /* background-color: red; */
+    /* margin: 128px 0; */
+    font-size: 2.5rem;
+}
+
+.rsec img {
+    width: 76%;
+}
+
+main hr {
+    border: 0;
+    background: #9c97f1;
+    height: 2px;
+    margin: 40px 84px;
+}
+
+.purple {
+    color: rgb(191, 105, 191);
+}
+
+#element {
+    color: rgb(191, 105, 191);
+}
+
+@media screen and (min-width:500px) {
+    .second {
+        display: flex;
+        justify-content: space-around;
+        max-width: 80vw;
+        height: 80vh;
+        margin: auto;
+        /* background-color: red; */
+    }
+
+    .second img {
+        width: 40%;
+        margin: 5px 0;
+        padding-top: 7%;
+    }
+
+    .second h1 {
+        /* align-items: center; */
+        font-size: 1.9rem;
+    }
+
+    .about {
+        /* background-color: red; */
+        margin-left: 68px;
+        padding-top: 7%;
+    }
+
+    .about ul {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .about ul li {
+        list-style: none;
+        margin-bottom: 10px;
+    }
+}
+
+footer {
+    background-color: rgb(16, 15, 15);
+    height: 160px;
+}
+
+.skills {
+    max-width: 68.75rem;
+    margin: auto;
+    text-align: center;
+    margin-top: 2.5rem;
+}
+
+.skill-header {
+    margin-bottom: 1rem;
+    padding-top: 7%;
+}
+
+.skills-wrapper img {
+    padding: 1.25rem;
+}
+
+.icon {
+    width: 11.875rem;
+    height: 11.25rem;
+}
+
+.icon-card {
+    background-color: #fff;
+    border-radius: 11px;
+    box-shadow: 0 3px 10px var(--secondary-shadow);
+    padding: 20px;
+    margin: 10px;
+}
+
+.card {
+    background-color: black !important;
+}
+
+.contact {
+    background-color: black;
+    margin-top: 2rem;
+}
+
+.contact h2 {
+    text-align: center;
+    margin-bottom: var(--bottom-margin-2);
+}
+
+/* Style inputs */
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: blue;
+    color: white;
+    padding: 12px 20px;
+    border: 5px;
+    cursor: pointer;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+
+    .column,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}

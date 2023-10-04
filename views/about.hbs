@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/Assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <title>About</title>
+</head>
+
+<body>
+    {{>Nav}}
+    <main>
+        <!-- About Section -->
+        <section class="second" id="about">
+            <img src="../public/Assets/Image/myimg.jpg" alt="">
+
+            <div class="about">
+                <h1 class="fs-1 text-center">About Me</h1>
+                <ul class="mt-4 px-md-0 px-2">
+                    <li class="d-flex fs-1">
+                        <span>Name:</span>
+                        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{Name}}</span>
+                    </li>
+                    <li class="d-flex fs-1">
+                        <span>DOB:</span>
+                        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{DOB}}</span>
+                    </li>
+                    <li class="d-flex fs-1">
+                        <span>Address:</span>
+                        <span>&nbsp;{{Address}}</span>
+                    </li>
+                    <li class="d-flex fs-1">
+                        <span>Email:</span>
+                        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{{Email}}</span>
+                    </li>
+                    <li class="d-flex fs-1">
+                        <span>Phone:</span>
+                        <span>&nbsp;&nbsp;&nbsp;&nbsp;{{Mobile}}</span>
+                    </li>
+                </ul><br>
+                <div class="text-center">
+                    <button type="button" class="btn btn-primary btn-lg">Download Resume</button>
+                </div>
+            </div>
+        </section><br><br>
+        <hr>
+    </main>
+
+    <!-- script link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/8de02aa1e3.js" crossorigin="anonymous"></script>
+    <script src="src\index.js"></script>
+    <!-- typing animation cdn link -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+
+    {{>Footer}}
+
+    
+</body>
+
+</html>
